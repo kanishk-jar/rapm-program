@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand palette (HSL) */
+    --background: 48 100% 94%; /* #FFF7DD */
+    --foreground: 267 67% 10%; /* #160829 */
+
+    --card: 48 100% 94%;
+    --card-foreground: 267 67% 10%;
+
+    --popover: 48 100% 94%;
+    --popover-foreground: 267 67% 10%;
+
+    /* Use foreground as primary to avoid hover color shifts on text */
+    --primary: 267 67% 10%; /* text/heading color */
+    --primary-foreground: 48 100% 94%;
+    --primary-glow: 267 67% 10%;
+
+    --secondary: 45 93% 85%; /* #FDECB2 */
+    --secondary-foreground: 267 67% 10%;
+
+    --muted: 267 10% 40%;
+    --muted-foreground: 267 30% 25%;
+
+    --accent: 45 93% 85%;
+    --accent-foreground: 267 67% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 48 100% 94%;
+
+    --border: 45 40% 85%;
+    --input: 45 40% 85%;
+    --ring: 267 67% 10%;
+
+    /* Remove gradients and animated tokens */
+    --gradient-primary: none;
+    --gradient-hero: none;
+    --gradient-card: none;
+    --shadow-elegant: none;
+    --shadow-card: none;
+    --transition-smooth: none;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 48 100% 94%;
+    --sidebar-foreground: 267 67% 10%;
+    --sidebar-primary: 267 67% 10%;
+    --sidebar-primary-foreground: 48 100% 94%;
+    --sidebar-accent: 45 93% 85%;
+    --sidebar-accent-foreground: 267 67% 10%;
+    --sidebar-border: 45 40% 85%;
+    --sidebar-ring: 267 67% 10%;
+  }
+
+  .dark { /* same as light to avoid alternate theme */ }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .animate-on-scroll,
+  .animate-on-scroll.in-view {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hover-lift,
+  .hover-lift:hover { transform: none; box-shadow: none; }
+
+  .hover-scale,
+  .hover-scale:hover { transform: none; }
+
+  .hover-glow,
+  .hover-glow:hover { box-shadow: none; }
+
+  .shimmer-bg { background: none; }
+
+  .stagger-children > * { opacity: 1; transform: none; animation: none; }
+
+  .magnetic {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .parallax-slow {
+    transform: translateY(calc(var(--scroll-y, 0) * 0.5px));
+  }
+}
