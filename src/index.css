@@ -68,7 +68,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+  @apply bg-background text-foreground;
+  /* Prevent elements at top from sticking under iOS dynamic island/notch */
+  padding-top: env(safe-area-inset-top);
   }
 
   html {

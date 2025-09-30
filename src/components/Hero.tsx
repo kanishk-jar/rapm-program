@@ -55,7 +55,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#FFF7DD] text-[#160829]">
+    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#FFF7DD] text-[#160829]" style={{ paddingTop: 'calc(env(safe-area-inset-top, 0px) + 16px)' }}>
       {/* Logo */}
       <div ref={logoRef} className="absolute top-4 left-4 md:top-8 md:left-8 z-20 animate-slide-in-left">
         <a href="https://www.myjar.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group cursor-pointer">
@@ -78,7 +78,7 @@ const Hero = () => {
       {/* Content */}
       <div ref={contentRef} className="relative z-10 max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
         <div className="inline-flex items-center gap-2 bg-[#FDECB2] border border-[#FDECB2] rounded-full px-4 py-2 mb-8">
-          <div className="w-2 h-2 bg-[#43197B] rounded-full animate-pulse" />
+          <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: '#16A34A' }} />
           <span className="text-sm font-medium" style={{color:'#43197B'}}>Applications Open</span>
         </div>
         
