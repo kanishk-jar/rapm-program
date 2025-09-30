@@ -77,8 +77,8 @@ const Hero = () => {
       {/* Content */}
       <div ref={contentRef} className="relative z-10 max-w-4xl mx-auto px-6 text-center animate-fade-in-up">
         <div className="inline-flex items-center gap-2 bg-[#FDECB2] border border-[#FDECB2] rounded-full px-4 py-2 mb-8">
-          <div className="w-2 h-2 bg-[#160829] rounded-full animate-pulse" />
-          <span className="text-sm font-medium" style={{color:'#160829'}}>Applications Open</span>
+          <div className="w-2 h-2 bg-[#43197B] rounded-full animate-pulse" />
+          <span className="text-sm font-medium" style={{color:'#43197B'}}>Applications Open</span>
         </div>
         
         <div className="mb-2">
@@ -103,7 +103,7 @@ const Hero = () => {
           <Button 
             variant="hero" 
             size="xl" 
-            className="w-full sm:w-auto group relative overflow-hidden bg-[#160829] text-[#FFF7DD] hover:opacity-90"
+            className="w-full sm:w-auto group relative overflow-hidden bg-[#43197B] text-[#FFF7DD] hover:opacity-90"
             data-apply-cta="true"
             onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957', '_blank')}
           >
@@ -113,7 +113,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="xl" 
-            className="w-full sm:w-auto group border-[#160829] text-[#160829] hover:bg-[#FDECB2]"
+            className="w-full sm:w-auto group border-[#43197B] text-[#43197B] hover:bg-[#FDECB2]"
             onClick={() => {
               const rotationalSection = document.querySelector('[data-section="rotational"]');
               rotationalSection?.scrollIntoView({ behavior: 'smooth' });

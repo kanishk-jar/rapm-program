@@ -108,13 +108,15 @@ const RotationalMastery = () => {
                       <p className="text-sm text-muted-foreground leading-relaxed">{rotation.subtitle}</p>
                     </div>
                   </div>
-                  <Badge 
-                    variant="outline" 
-                    className="opacity-90 transition-opacity duration-300 whitespace-nowrap px-3 py-1 text-xs rounded-full"
-                    style={{background:'#FDECB2', color:'#160829', borderColor:'#FDECB2'}}
-                  >
-                    3 months
-                  </Badge>
+                  {false && (
+                    <Badge 
+                      variant="outline" 
+                      className="opacity-90 transition-opacity duration-300 whitespace-nowrap px-3 py-1 text-xs rounded-full"
+                      style={{background:'#FDECB2', color:'#160829', borderColor:'#FDECB2'}}
+                    >
+                      3 months
+                    </Badge>
+                  )}
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed mb-6 group-hover:text-foreground transition-colors duration-300">

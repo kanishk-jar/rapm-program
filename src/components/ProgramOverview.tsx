@@ -12,7 +12,7 @@ const ProgramOverview = () => {
           <Badge variant="outline" className="mb-6" style={{background:'#FDECB2', borderColor:'#FDECB2', color:'#160829'}}>🎨 Learn Beyond Product Management</Badge>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8">
             Products That Move
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="block">
               Culture & Behavior
             </span>
           </h2>

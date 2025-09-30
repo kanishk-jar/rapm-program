@@ -76,6 +76,14 @@ All colors MUST be HSL.
   }
 }
 
+/* Apply Frank Ruhl Libre 700 to all headings */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+  }
+}
+
 @layer utilities {
   .animate-on-scroll,
   .animate-on-scroll.in-view {

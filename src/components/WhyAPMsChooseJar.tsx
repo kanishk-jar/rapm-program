@@ -30,39 +30,42 @@ const WhyAPMsChooseJar = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Real Testimonials */}
             <div className="bg-card rounded-xl p-6 border border-primary/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <div className="w-full h-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center text-primary-foreground font-bold">A</div>
+                  <img src="/sameer.jpeg" alt="Md Sameer Mahboob" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"The Jar APM program gave me ownership of features touching 10M+ users within my first rotation. The mentorship from founders and senior PMs accelerated my growth by years."</p>
-                  <p className="font-semibold text-sm">Arjun Sharma</p>
-                  <p className="text-xs text-muted-foreground">Alumni, PM - Growth</p>
+                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"My time as a PM at Jar was a transformative experience. It gave me early ownership, exposed me to different product challenges, and improved my decision-making. The role helped me handle uncertainty, understand users better, and grow in confidence and clarity as a product Manager."</p>
+                  <p className="font-semibold text-sm">Md Sameer Mahboob</p>
+                  <p className="text-xs text-muted-foreground">PM - Activation, Jar</p>
                 </div>
               </div>
             </div>
+
             <div className="bg-card rounded-xl p-6 border border-primary/20">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <div className="w-full h-full bg-gradient-to-br from-accent to-primary-glow flex items-center justify-center text-primary-foreground font-bold">P</div>
+                  <img src="/pragya.jpeg" alt="Pragya Nagpal" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"From day one, I was building features for millions of users. The exposure to fintech, AI, and product strategy was unmatched. This program fast-tracked my career by 3+ years."</p>
-                  <p className="font-semibold text-sm">Priya Patel</p>
-                  <p className="text-xs text-muted-foreground">Alumni, Senior PM - AI/ML</p>
+                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"As Product Owners at Jar, nothing excites us more than seeing our product lift the real financial burdens that Indian people face. What has stood out for me is the data-driven, rapid experimentation & high ownership environment where every team member is empowered to bring bold ideas to life. At Jar, you're expected to fail fast, learn quicker & drive real business outcomes."</p>
+                  <p className="font-semibold text-sm">Pragya Nagpal</p>
+                  <p className="text-xs text-muted-foreground">SPM - Retention, Jar</p>
                 </div>
               </div>
             </div>
+
             <div className="bg-card rounded-xl p-6 border border-primary/20 lg:col-span-2">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <div className="w-full h-full bg-gradient-to-br from-primary-glow to-accent flex items-center justify-center text-primary-foreground font-bold">R</div>
+                  <img src="/gaurav.jpeg" alt="Gaurav Mampally" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"The rotational structure gave me deep exposure to everything - from compliance and growth to AI and user research. I learned more in 12 months than most PMs learn in 3 years. The founders' direct mentorship was incredible."</p>
-                  <p className="font-semibold text-sm">Rahul Gupta</p>
-                  <p className="text-xs text-muted-foreground">Alumni, VP Product - Fintech Startup</p>
+                  <p className="text-sm text-muted-foreground italic mb-3 text-gray-500">"Jar's problem-first mindset and exceptional team has created an environment where every project, no matter how challenging, yields invaluable learnings that far outweigh the effort invested. Definitely the place you'd want to be at if you're keen on building and scaling products that enables mass India to make better financial decisions."</p>
+                  <p className="font-semibold text-sm">Gaurav Mampally</p>
+                  <p className="text-xs text-muted-foreground">PM - Activation, Jar</p>
                 </div>
               </div>
             </div>

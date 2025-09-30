@@ -10,16 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "",
-        hero: "bg-[#160829] text-[#FFF7DD] border border-[#160829]",
-        cta: "bg-[#160829] text-[#FFF7DD] border border-[#160829]",
+        hero: "bg-[#43197B] text-[#FFF7DD] border border-[#43197B]",
+        cta: "bg-[#43197B] text-[#FFF7DD] border border-[#43197B]",
         destructive:
           "bg-[#573189] text-[#FFF7DD]",
         outline:
-          "border border-[#160829] bg-[#FFF7DD] text-[#160829]",
+          "border border-[#43197B] bg-[#FFF7DD] text-[#43197B]",
         secondary:
           "bg-[#FDECB2] text-[#160829]",
         ghost: "",
-        link: "text-[#160829] underline-offset-4",
+        link: "text-[#43197B] underline-offset-4",
       },
       size: {
         default: "h-10 px-4 py-2",

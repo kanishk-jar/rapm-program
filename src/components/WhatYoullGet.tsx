@@ -20,7 +20,7 @@ const WhatYoullGet = () => {
       icon: "🧠",
       details: [
         "Personalized coaching from senior PMs",
-        "Regular founder office hours",
+        "Fintech leadership access",
         "Product strategy workshops",
         "Access to industry expert network"
       ]

@@ -26,15 +26,15 @@ const FloatingApplyCTA = () => {
 
   return (
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-      <div className="rounded-full px-3 py-2 flex items-center gap-3 border" style={{background:'#FFF7DD', borderColor:'#FDECB2', color:'#160829'}}>
+      <div className="rounded-full px-3 py-2 flex items-center gap-3 border" style={{background:'#FFF7DD', borderColor:'#FDECB2', color:'#43197B'}}>
         <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-full" style={{background:'#FDECB2'}}>
-          <span className="w-1.5 h-1.5 rounded-full" style={{background:'#160829'}} />
+          <span className="w-1.5 h-1.5 rounded-full" style={{background:'#43197B'}} />
           <span className="text-xs">Applications Open</span>
         </div>
         <Button 
           variant="cta" 
           size="lg" 
-          className="px-6" style={{background:'#160829', color:'#FFF7DD'}}
+          className="px-6" style={{background:'#43197B', color:'#FFF7DD'}}
           onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957', '_blank')}
         >
           Apply Now
