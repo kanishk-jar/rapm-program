@@ -56,7 +56,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#FFF7DD] text-[#160829]">
       {/* Logo */}
-      <div ref={logoRef} className="absolute top-8 left-8 z-20 animate-slide-in-left">
+      <div ref={logoRef} className="absolute top-4 left-4 md:top-8 md:left-8 z-20 animate-slide-in-left">
         <a href="https://www.myjar.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group cursor-pointer">
           {!logoError ? (
             <img src="/jar-logo.png?v=1" alt="Jar" className="h-10 md:h-12 w-auto mix-blend-multiply" onError={() => setLogoError(true)} />
@@ -104,11 +104,17 @@ const Hero = () => {
             variant="hero" 
             size="xl" 
             className="w-full sm:w-auto group relative overflow-hidden bg-[#43197B] text-[#FFF7DD] hover:opacity-90"
-            data-apply-cta="true"
-            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957', '_blank')}
+            asChild
           >
-            <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Apply Now →</span>
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-white/10" />
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-apply-cta="true"
+            >
+              <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Apply Now →</span>
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-white/10" />
+            </a>
           </Button>
           <Button 
             variant="outline" 
