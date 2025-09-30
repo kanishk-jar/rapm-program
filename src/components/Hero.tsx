@@ -85,7 +85,7 @@ const Hero = () => {
           <span className="block text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold whitespace-normal md:whitespace-nowrap">Build Greate Products. Lead the Impact.</span>
         </div>
         <div className="mb-8">
-          <span className="block text-5xl md:text-7xl font-extrabold">Jar Associate Product Management Rotational Program</span>
+          <span className="block text-5xl md:text-7xl font-extrabold" style={{fontFamily: 'Frank Ruhl Libre, serif', fontWeight: 700}}>Jar Associate Product Management Rotational Program</span>
         </div>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-16 mb-8">
@@ -146,7 +146,7 @@ const Hero = () => {
           <div className="rounded-2xl p-6 border text-center" style={{background:'#FFF7DD', borderColor:'#FDECB2'}}>
             <div className="text-4xl mb-2 group-hover:animate-float">⭐</div>
             <div className="text-2xl font-bold mb-1">Batch of 4</div>
-            <div className="text-xs">First Batch starting from 15th November 2025</div>
+            <div className="text-xs">Deadline to submit: 31st October</div>
           </div>
         </div>
       </div>

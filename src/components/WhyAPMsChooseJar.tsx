@@ -10,8 +10,8 @@ const WhyAPMsChooseJar = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">100%</span>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <span className="text-primary font-bold text-sm leading-none">100%</span>
               </div>
               <div>
                 <p className="font-semibold leading-snug">Conversion Rate</p>
@@ -19,8 +19,8 @@ const WhyAPMsChooseJar = () => {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">2x</span>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <span className="text-primary font-bold text-sm leading-none">2x</span>
               </div>
               <div>
                 <p className="font-semibold leading-snug">Faster Growth</p>

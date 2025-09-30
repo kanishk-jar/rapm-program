@@ -146,7 +146,7 @@ const ApplicationProcess = () => {
             </div>
             
             <p className="text-sm text-muted-foreground mt-6 animate-fade-in">
-              Applications are reviewed on a rolling basis • No application deadline
+              Deadline to submit: 31st October • Applications reviewed on a rolling basis
             </p>
           </div>
         </div>
