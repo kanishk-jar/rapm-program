@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 import { useEffect, useRef, useState } from "react";
+import { APPLY_URL } from "@/lib/constants";
 
 const Hero = () => {
   const logoRef = useRef<HTMLDivElement>(null);
@@ -107,7 +108,7 @@ const Hero = () => {
             asChild
           >
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957"
+              href={APPLY_URL}
               target="_blank"
               rel="noopener noreferrer"
               data-apply-cta="true"

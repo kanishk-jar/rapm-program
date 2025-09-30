@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useRef } from "react";
+import { APPLY_URL } from "@/lib/constants";
 
 const ApplicationProcess = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -137,11 +138,12 @@ const ApplicationProcess = () => {
                 variant="cta" 
                 size="xl" 
                 className="w-full sm:w-auto hover-lift hover-glow magnetic group relative overflow-hidden"
-                data-apply-cta="true"
-                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957', '_blank')}
+                asChild
               >
-                <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Apply Now →</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />
+                <a href={APPLY_URL} target="_blank" rel="noopener noreferrer" data-apply-cta="true">
+                  <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300">Apply Now →</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />
+                </a>
               </Button>
             </div>
             

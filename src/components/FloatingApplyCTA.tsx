@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { APPLY_URL } from "@/lib/constants";
 
 const FloatingApplyCTA = () => {
   const [show, setShow] = useState(false);
@@ -35,9 +36,9 @@ const FloatingApplyCTA = () => {
           variant="cta" 
           size="lg" 
           className="px-6" style={{background:'#43197B', color:'#FFF7DD'}}
-          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScPTBWIAsiNP8B_Q0KIeSMrPuwouPex0KKAWakJiUJv9E76mw/viewform?usp=sharing&ouid=107277259200087864957', '_blank')}
+          asChild
         >
-          Apply Now
+          <a href={APPLY_URL} target="_blank" rel="noopener noreferrer" data-apply-cta="true">Apply Now</a>
         </Button>
       </div>
     </div>
